@@ -196,7 +196,7 @@ module.exports = function (
     }
   }
 
-  const dependenciesAgs = initArgs.concat('node-sass')
+  const dependenciesAgs = initArgs.concat('node-sass','redux','react-redux','redux-thunk')
 
   const proc = spawn.sync(command, dependenciesAgs, { stdio: 'inherit' });
   if (proc.status !== 0) {
