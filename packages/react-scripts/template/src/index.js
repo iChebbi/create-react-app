@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 
-import App from 'app/home'
+import App from 'components/home'
 import * as serviceWorker from 'utils/serviceWorker'
 import './index.scss'
 

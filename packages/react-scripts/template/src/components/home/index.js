@@ -1,7 +1,8 @@
 import { connect } from 'react-redux'
-import { toggleSpinAnimation } from './duck/operations'
 import { withReducer } from 'react-redux-dynamic-reducer'
 import reducer from './duck/reducer'
+
+import { toggleSpinAnimation } from './duck/operations'
 
 import Home from './Home'
 
