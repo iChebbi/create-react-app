@@ -203,7 +203,8 @@ module.exports = function (
     'redux-thunk',
     'redux-dynamic-reducer',
     'react-redux-dynamic-reducer',
-    'redux-logger'
+    'redux-logger',
+    'axios'
   ]
 
   const dependenciesArgs = initArgs.concat(additionalDependencies)

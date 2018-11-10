@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 
-import { toggleSpinAnimation } from './duck/operations'
 
 import { ReactComponent as SVGLogo } from './logo.svg'
 import './Home.scss';
 
-class Home extends Component {
+export default class Home extends Component {
   render() {
     const { shouldSpin, toggleSpinAnimation } = this.props
     return (
@@ -24,8 +22,3 @@ class Home extends Component {
     );
   }
 }
-
-const mapStateToProps = ({ home }) => ({ shouldSpin: home.shouldSpin })
-const mapDispatchToProps = { toggleSpinAnimation }
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
