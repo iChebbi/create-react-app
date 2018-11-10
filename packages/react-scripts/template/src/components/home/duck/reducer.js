@@ -8,7 +8,7 @@ export default (state = initialState, action) => {
     case types.TOGGLE_SPIN_ANIMATION:
       return {
         ...state,
-        shouldSpin: action.payload
+        shouldSpin: !state.shouldSpin
       }
     default:
       return state

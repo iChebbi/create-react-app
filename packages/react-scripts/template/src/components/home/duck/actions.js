@@ -1,8 +1,7 @@
 import types from './types'
 
-const setSpinAnimationState = value => ({
-  type: types.TOGGLE_SPIN_ANIMATION,
-  payload: Boolean(value)
+const setSpinAnimationState = () => ({
+  type: types.TOGGLE_SPIN_ANIMATION
 })
 
 export { setSpinAnimationState }
