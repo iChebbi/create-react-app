@@ -196,11 +196,21 @@ module.exports = function (
     }
   }
 
-  const dependenciesAgs = initArgs.concat('node-sass','redux','react-redux','redux-thunk')
+  const additionalDependencies = [
+    'node-sass',
+    'redux',
+    'react-redux',
+    'redux-thunk',
+    'redux-dynamic-reducer',
+    'react-redux-dynamic-reducer',
+    'redux-logger'
+  ]
 
-  const proc = spawn.sync(command, dependenciesAgs, { stdio: 'inherit' });
+  const dependenciesArgs = initArgs.concat(additionalDependencies)
+
+  const proc = spawn.sync(command, dependenciesArgs, { stdio: 'inherit' });
   if (proc.status !== 0) {
-    console.error(`\`${command} ${dependenciesAgs.join(' ')}\` failed`);
+    console.error(`\`${command} ${dependenciesArgs.join(' ')}\` failed`);
     return;
   }
 
