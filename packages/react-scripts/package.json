@@ -1,6 +1,6 @@
 {
-  "name": "@ichebbi/react-scripts",
-  "version": "1.2.5",
+  "name": "@ayyo/react-scripts",
+  "version": "1.0.0",
   "description": "Configuration and scripts for Create React App.",
   "repository": "ichebbi/create-react-app",
   "license": "MIT",
