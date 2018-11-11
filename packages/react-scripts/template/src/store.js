@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 import { applyMiddleware, compose } from 'redux'
 import { createStore } from 'redux-dynamic-reducer'
 import logger from 'redux-logger'

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import { default as home } from 'components/home/duck'
+import home from 'components/home/duck/reducer'
 
 export default combineReducers({
-  home
+  home,
 })

@@ -197,14 +197,16 @@ module.exports = function (
   }
 
   const additionalDependencies = [
+    'axios',
+    'eslint-config-airbnb',
     'node-sass',
-    'redux',
+    'prop-types',
     'react-redux',
-    'redux-thunk',
-    'redux-dynamic-reducer',
     'react-redux-dynamic-reducer',
+    'redux',
+    'redux-dynamic-reducer',
     'redux-logger',
-    'axios'
+    'redux-thunk'
   ]
 
   const dependenciesArgs = initArgs.concat(additionalDependencies)
