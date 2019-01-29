@@ -74,7 +74,7 @@ function tryGitInit(appPath) {
   }
 }
 
-module.exports = function (
+module.exports = function(
   appPath,
   appName,
   verbose,
@@ -160,11 +160,11 @@ module.exports = function (
       command = 'npm';
       args = ['install', '--save', verbose && '--verbose'].filter(e => e);
     }
-    return args
+    return args;
   }
 
   let command;
-  const initArgs = installCmdArgs(useYarn)
+  const initArgs = installCmdArgs(useYarn);
   let args = initArgs.concat('react', 'react-dom');
 
   // Install additional template dependencies, if present
@@ -206,10 +206,11 @@ module.exports = function (
     'redux',
     'redux-dynamic-reducer',
     'redux-logger',
-    'redux-thunk'
-  ]
+    'redux-thunk',
+    'react-router-dom',
+  ];
 
-  const dependenciesArgs = initArgs.concat(additionalDependencies)
+  const dependenciesArgs = initArgs.concat(additionalDependencies);
 
   const proc = spawn.sync(command, dependenciesArgs, { stdio: 'inherit' });
   if (proc.status !== 0) {
